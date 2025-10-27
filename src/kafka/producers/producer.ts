@@ -5,7 +5,7 @@ import { SchemaRegistry } from "../schema-registery";
 import { MessageHeaderActions } from "../../types/message";
 import { objectUtil } from "../../utils/object-util";
 
-export abstract class ProducerFactory<M extends {}> {
+export abstract class AppProducer<M extends {}> {
     private producer: Producer
     private schemaRegistry: SchemaRegistry
 

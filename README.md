@@ -3,11 +3,8 @@
 I've created a small proof of concept using kafka for communication between 2 services.
 <h2>Instructions</h2>
 
-<h3>Internal configuration</h3>
-To successfully run this app you will need to fill `.env` file with provided keys from `.env.example`
-
 <h3>External configuration</h3>
- 
+
 For this example I've used [Aiven](https://console.aiven.io/) to create my Apache kafka cluster (tier gives 1 month free usage without giving your payment info).
 Also I've created schema using Raw Avro format that can be found in `/src/kafka/schemas` you can:
 - use Aiven dashboard to create schema using this raw data as value (key should stay string always)
@@ -15,8 +12,15 @@ Also I've created schema using Raw Avro format that can be found in `/src/kafka/
 
 To learn about Avro schemas you can visit this [link](https://avro.apache.org/docs/).
 
+<h3>Internal configuration</h3>
+To successfully run this app you will need to fill `.env` file with provided keys from `.env.example` all keys will be available on aiven overview tab (for registry look in registry section) and copy sasl certificate to ca.pem file and add it to root project root
+
 <h3>Running scripts</h3>
 
 Both consumer and producer have debug and regular mode. You will run these two commands in root of the project but in two separate terminals<br>
 `npm run consumer[-debug]`<br>
 `npm run producer[-debug]`
+
+<h3>Conclusion</h3>
+
+Now that your app is up and running, you can play with offsets, schema validations, consumer groups and headers and learn kafka much easier through your own samples/tests.
