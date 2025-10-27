@@ -1,4 +1,4 @@
-import {CompanyConsumer} from "./kafka/counsumers/company-consumer";
+import { CompanyConsumer } from "./kafka/counsumers/company-consumer";
 
 const consumer = new CompanyConsumer()
 

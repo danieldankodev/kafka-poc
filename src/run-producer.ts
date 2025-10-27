@@ -1,6 +1,5 @@
 import { CompanyMessageValue } from "./types/message";
-import {CompanyProducer} from "./kafka/producers/company-producer";
-
+import { CompanyProducer } from "./kafka/producers/company-producer";
 
 const producer = new CompanyProducer()
 

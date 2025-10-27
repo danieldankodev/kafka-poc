@@ -1,6 +1,6 @@
 import AppConsumer from "./consumer";
-import {UserMessageValue} from "../../types/message";
-import {Topics} from "../../types/topics";
+import { UserMessageValue } from "../../types/message";
+import { Topics } from "../../types/topics";
 
 export class UserConsumer extends AppConsumer<UserMessageValue> {
     constructor() {

@@ -1,5 +1,5 @@
-import {SchemaRegistry as Registry, SchemaType} from '@kafkajs/confluent-schema-registry';
-import {RawAvroSchema} from "@kafkajs/confluent-schema-registry/dist/@types";
+import { SchemaRegistry as Registry, SchemaType } from '@kafkajs/confluent-schema-registry';
+import { RawAvroSchema } from "@kafkajs/confluent-schema-registry/dist/@types";
 
 export class SchemaRegistry {
     private registry: Registry

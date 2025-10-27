@@ -1,9 +1,9 @@
 import { Consumer, ConsumerSubscribeTopics, EachBatchPayload, EachMessagePayload } from 'kafkajs'
-import {kafkaInstance} from "../kafka-instance";
+import { kafkaInstance } from "../kafka-instance";
 import { Topics } from "../../types/topics";
-import { MessageValue} from "../../types/message";
-import {SchemaRegistry} from "../schema-registery";
-import {objectUtil} from "../../utils/object-util";
+import { MessageValue } from "../../types/message";
+import { SchemaRegistry } from "../schema-registery";
+import { objectUtil } from "../../utils/object-util";
 
 export default abstract class AppConsumer<M extends MessageValue> {
     private kafkaConsumer: Consumer

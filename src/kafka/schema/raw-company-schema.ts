@@ -1,4 +1,4 @@
-import {RawAvroSchema} from "@kafkajs/confluent-schema-registry/dist/@types";
+import { RawAvroSchema } from "@kafkajs/confluent-schema-registry/dist/@types";
 
 export const companySchema: RawAvroSchema = {
     name: 'Company',

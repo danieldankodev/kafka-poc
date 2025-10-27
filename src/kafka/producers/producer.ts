@@ -1,9 +1,9 @@
-import {Producer, ProducerRecord} from 'kafkajs'
-import {kafkaInstance} from "../kafka-instance";
-import {Topics} from "../../types/topics";
-import {SchemaRegistry} from "../schema-registery";
-import { MessageHeaderActions} from "../../types/message";
-import {objectUtil} from "../../utils/object-util";
+import { Producer, ProducerRecord } from 'kafkajs'
+import { kafkaInstance } from "../kafka-instance";
+import { Topics } from "../../types/topics";
+import { SchemaRegistry } from "../schema-registery";
+import { MessageHeaderActions } from "../../types/message";
+import { objectUtil } from "../../utils/object-util";
 
 export abstract class ProducerFactory<M extends {}> {
     private producer: Producer

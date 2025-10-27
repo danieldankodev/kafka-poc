@@ -1,4 +1,4 @@
-import {Kafka, logLevel} from "kafkajs";
+import { Kafka, logLevel } from "kafkajs";
 import fs from "fs";
 
 export const kafkaInstance = new Kafka({
